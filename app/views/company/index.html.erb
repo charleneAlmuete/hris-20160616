@@ -1,0 +1,19 @@
+<div id="fontall">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Company Details
+					<%= link_to '<span class="fa fa-plus-circle"></span> Add Company'.html_safe, new_company_path, remote: true, class: "btn btn-primary pull-right", data: {toggle:"modal", target:"#myModal"} %> 
+				</h2><br />
+			</div>
+		</div>
+		<%= render 'grid' %>
+	</div>
+	
+	<div class="modal fade" id="myModal" role="dialog">
+		<div id="modal_content">
+
+		</div>
+	</div>
+</div>
+

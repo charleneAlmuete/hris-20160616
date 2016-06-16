@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employee_id: 
+  position: MyText
+  company: MyText
+  durFrom: 2016-06-13
+  durTo: 2016-06-13
+  status: MyText
+  salary: 9.99
+  reason: MyText
+
+two:
+  employee_id: 
+  position: MyText
+  company: MyText
+  durFrom: 2016-06-13
+  durTo: 2016-06-13
+  status: MyText
+  salary: 9.99
+  reason: MyText

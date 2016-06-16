@@ -1,0 +1,25 @@
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+			<h2>Employee Details
+				<%= link_to '<span class="fa fa-plus-circle"></span> Add Employee'.html_safe, employee_new_path, class: "btn btn-primary pull-right" %> 
+			</h2>
+		</div>
+	</div>
+	<div id="fontall" class="row well">
+		<ul class="nav nav-tabs">
+			<li class="active"><%= link_to '<span class="fa fa-comments"></span> Personal Info'.html_safe %></li>
+			<li><%= link_to '<span class="fa fa-user"></span> Contact Info'.html_safe %></li>
+			<li><%= link_to '<span class="fa fa-graduation-cap"></span> Education'.html_safe %></li>
+			<li><%= link_to '<span class="fa fa-star"></span> Awards and Achievements'.html_safe %></li>
+			<li><%= link_to '<span class="fa fa-credit-card"></span> Licensure and Examination'.html_safe %></li>
+			<li><%= link_to '<span class="fa fa-globe"></span> Work Experience'.html_safe %></li>
+			<li><%= link_to '<span class="fa fa-cog"></span> Skills'.html_safe %></li>
+			<li><%= link_to '<span class="fa fa-sitemap"></span> Organizations'.html_safe %></li>
+			<li><%= link_to '<span class="fa fa-television"></span> Trainings and Seminars'.html_safe %></li>
+			<li><%= link_to '<span class="fa fa-stethoscope"></span> Medical History'.html_safe %></li>
+		</ul><br />
+	</div>
+</div>
+

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employee_id: 
+  levelType: MyText
+  course: MyText
+  school: MyText
+  yearGrad: 1
+
+two:
+  employee_id: 
+  levelType: MyText
+  course: MyText
+  school: MyText
+  yearGrad: 1

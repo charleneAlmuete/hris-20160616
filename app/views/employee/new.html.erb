@@ -1,0 +1,36 @@
+
+<div class="container-fluid">
+	<h2>Employee Registration</h2>
+	<div id="fontall" class="row well">
+		<ul class="nav nav-tabs">
+			<li class="active"><%= link_to '<span class="fa fa-comments"></span> Personal Info'.html_safe, id: 'personal', remote: 'true' %></li>
+			<li class="dropdown" id= "fontall">
+				<%= link_to '<span class="fa fa-user"></span> Contact Info'.html_safe, class: "dropdown-toggle", data: {toggle: "dropdpwn"} %>
+				<ul class="dropdown-menu" id="fontall">
+					<li>
+						<%= link_to "Basic Contact Info", id: 'basic_contact' %>
+					</li>
+					<li>
+						<%= link_to "Emergency Contact Info", id: 'emergency_contact' %>
+					</li>
+				</ul>
+			</li>
+			<li><%= link_to '<span class="fa fa-graduation-cap"></span> Education'.html_safe, id: 'education' %></li>
+			<li><%= link_to '<span class="fa fa-star"></span> Awards and Achievements'.html_safe, id: 'award' %></li>
+			<li><%= link_to '<span class="fa fa-credit-card"></span> Licensure and Examination'.html_safe, id: 'exam' %></li>
+			<li><%= link_to '<span class="fa fa-globe"></span> Work Experience'.html_safe, id: 'work' %></li>
+			<li><%= link_to '<span class="fa fa-cog"></span> Skills'.html_safe, id: 'skill' %></li>
+			<li><%= link_to '<span class="fa fa-sitemap"></span> Organizations'.html_safe, id: 'organization' %></li>
+			<li><%= link_to '<span class="fa fa-television"></span> Trainings and Seminars'.html_safe, id: 'training' %></li>
+			<li><%= link_to '<span class="fa fa-stethoscope"></span> Medical History'.html_safe, id: 'medical' %></li>
+		</ul><br />
+
+		<div id="personal_div">
+
+		</div>
+	</div>
+</div>
+
+
+
+

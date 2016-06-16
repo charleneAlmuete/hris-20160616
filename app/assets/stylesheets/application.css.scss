@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require font-awesome
+ *= require jquery-ui
+ *= require_tree .
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+label{
+    float:left;
+}
+
+/*id*/
+#nav-menu{
+	display:block;
+	font-size:28px;
+}
+
+#fontall{
+	font-family:tahoma;
+	font-size:12px;
+}
+
+#fontall1{
+	font-family:tahoma;
+	font-size:13px;
+}
+
+
+#nav-font{
+	color:black;
+}
+
+
+/*class*/
+.btn-primary, a:active{
+	background:#007aff none repeat scroll 0 0;
+	
+}
+
+.dropdown:hover .dropdown-menu{
+display: block;
+}
+
+.form-horizontal .control-label{
+	text-align:left;
+}
+
+.dropdown-menu{
+	min-width:172px;
+}
+
+.dashboard{
+	color:brown;
+}
+
+.affiliate{
+	color:rgb(105, 105, 105);
+}
+
+.employee{
+	color:rgb(0, 122, 255);
+}
+
+.claim{
+	color:green;
+}
+
+.leave{
+	color:rgb(102, 51, 153);
+}
+
+.timesheet{
+	color:red;
+}
+
+.project{
+	color:rgb(47, 79, 79);
+}
+
+
+/*media*/

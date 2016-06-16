@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employee_id: 
+  condition: MyString
+  started: 1
+  physician: MyString
+
+two:
+  employee_id: 
+  condition: MyString
+  started: 1
+  physician: MyString

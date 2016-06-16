@@ -1,0 +1,19 @@
+<div id="fontall">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Company's Branch Details
+					<%= link_to '<span class="fa fa-tasks"></span> Set Branch'.html_safe, branchcom_new_path, remote: true, class: "btn btn-primary pull-right", data: {toggle:"modal", target:"#myModal"} %> 
+					<%= link_to '<span class="fa fa-plus-circle"></span> Add Branch List'.html_safe, branchcom_new_path, remote: true, class: "btn btn-primary pull-right", id: 'branch_margin', data: {toggle:"modal", target:"#myModal"} %> 
+				</h2><br />
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="myModal" role="dialog">
+		<div id="modal_content">
+
+		</div>
+	</div>
+</div>
+

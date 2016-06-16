@@ -1,0 +1,17 @@
+<%= grid(@company_grid, show_filters: :always) do |g|
+
+  g.column name:  'ID', attribute: 'id'
+
+  g.column name:  'Code', attribute: 'code'
+
+  g.column name:  'Contact No', attribute: 'contactno'
+
+  g.column name:  'Email', attribute: 'email'
+
+  g.column name:  'Website', attribute: 'website'
+
+  g.column do |task| 
+  	link_to '<span class="fa fa-pencil-square-o"></span>'.html_safe, company_path(task.id), remote: true, class: "btn btn-primary", data: {toggle:"modal", target:"#myModal"}
+  end 
+
+end -%>

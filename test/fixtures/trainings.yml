@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dateFrom: 2016-06-13
+  dateTo: 2016-06-13
+  institution: MyString
+  venue: MyString
+  speaker: MyString
+  remarks: MyText
+
+two:
+  name: MyString
+  dateFrom: 2016-06-13
+  dateTo: 2016-06-13
+  institution: MyString
+  venue: MyString
+  speaker: MyString
+  remarks: MyText
