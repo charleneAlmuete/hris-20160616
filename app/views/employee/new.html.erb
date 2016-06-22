@@ -2,6 +2,11 @@
 <div class="container-fluid">
 	<h2>Employee Registration</h2>
 	<div id="fontall" class="row well">
+		<ul class="nav nav-tabs nav-justified">
+			<li class="active"><%= link_to 'P R O F I L E' %></li>
+			<li><%= link_to 'S E R V I C E' %></li>
+		</ul><br />
+
 		<ul class="nav nav-tabs">
 			<li class="active"><%= link_to '<span class="fa fa-comments"></span> Personal Info'.html_safe, id: 'personal', remote: 'true' %></li>
 			<li class="dropdown" id= "fontall">
@@ -25,8 +30,119 @@
 			<li><%= link_to '<span class="fa fa-stethoscope"></span> Medical History'.html_safe, id: 'medical' %></li>
 		</ul><br />
 
-		<div id="personal_div">
+		<div id="personal_content">
+			<div class= "col-lg-9">
+				<%= simple_form_for @employee, url: employee_index_path, html: {class: "form-horizontal"} do |f| %>
+				<div class="col-lg-6">
+					<div class="form-group">
+						<label class="control-label col-lg-5">Firstname</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'fName', class: "form-control" %>
+						</div>
+					</div>
 
+					<div class="form-group">
+						<label class="control-label col-lg-5">Place of Birth</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'placeBirth', class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Gender</label>
+						<div class="col-lg-7">
+							<%= f.select 'gender', ['Male', 'Female'], {}, class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Citizenship</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'citizenship', class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Language</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'language', class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Height</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'height', class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Hair</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'hair', class: "form-control" %>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="form-group">
+						<label class="control-label col-lg-5">Lastname</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'lName', class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Date of Birth</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'dateBirth', class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Civil Status</label>
+						<div class="col-lg-7">
+							<%= f.select 'civilStatus', ['Single', 'Married', 'Widow', 'Windower', 'Separated'], {}, class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Religion</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'religion', class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Blood Type</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'bloodType', class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Weight</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'weight', class: "form-control" %>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-5">Complexion</label>
+						<div class="col-lg-7">
+							<%= f.text_field 'complexion', class: "form-control" %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="img-thumbnail" style="width: 200px; height: 210px; margin-left: 20%; ">
+					<img width="100%" height= "100%" src="http://theroboerp.com/app/uploads/noimage.png">
+				</div>
+				<button class="btn btn-primary btn-block">Browse</button>
+			</div>
+			<br /><br />
+			<%= f.submit 'Save', class: 'btn btn-success btn-block' %>
+			<% end %>
 		</div>
 	</div>
 </div>

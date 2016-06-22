@@ -1,0 +1,16 @@
+<%= grid(@branchnew_grid, show_filters: :always) do |g|
+
+  g.column name:  'ID', attribute: 'id', filter: false
+
+  g.column name:  'Company', attribute: 'name', assoc: :company
+
+  g.column name:  'Company', attribute: 'code', assoc: :company
+
+  g.column name:  'Branch', attribute: 'name',  assoc: :branchset
+
+  g.column name:  'Address', attribute: 'address'
+
+  g.column do |task| 
+  	link_to '<span class="fa fa-pencil-square-o"></span>'.html_safe, edit_branchcom_path(task.id), remote: true, class: "btn btn-primary", data: {toggle:"modal", target:"#myModal1"}
+  end 
+end -%>

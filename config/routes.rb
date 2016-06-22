@@ -1,19 +1,11 @@
 HRIS::Application.routes.draw do
-
-  get "employee/new"
-  get "employee/edit"
-  get "employee/show"
-  get "employee/index"
-  get "branchcom/new"
-  get "branchcom/edit"
-  get "branchcom/index"
-  get "branchset/new"
-  get "branchset/edit"
-  get "branchset/index"
-  root 'company#index'
+  
+  root "company#index"
   resources :company
+  get "branchcom/newset"
   resources :branchcom
   resources :employee
+  resources :service
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

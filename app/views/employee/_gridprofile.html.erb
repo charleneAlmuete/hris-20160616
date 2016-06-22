@@ -1,0 +1,23 @@
+<%= grid(@profile_grid, show_filters: :always) do |g|
+
+  g.column name:  'ID', attribute: 'id', filter: false
+
+  g.column name:  'Firstname', attribute: 'fName'
+
+  g.column name:  'Lastname', attribute: 'lName'
+
+  g.column name:  'Place of Birth', attribute: 'placeBirth', filter: false
+
+  g.column name:  'Date of Birth', attribute: 'dateBirth', filter: false
+
+  g.column name:  'Gender', attribute: 'gender', filter: false
+
+  g.column name:  'Civil Status', attribute: 'civilStatus', filter: false
+
+  g.column name:  'Citizenship', attribute: 'citizenship', filter: false
+
+  g.column do |task| 
+  	link_to 'View', employee_path(task.id), remote: true
+  end 
+
+end -%>

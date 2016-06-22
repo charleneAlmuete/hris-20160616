@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jobTitle: MyString
+  branchcom_id: 
+  empStatus: MyString
+  reportTo: MyString
+  salary_grade_id: 
+  selection: MyString
+  dutiesRes: MyText
+  qualification: MyString
+  prefSkills: MyText
+
+two:
+  jobTitle: MyString
+  branchcom_id: 
+  empStatus: MyString
+  reportTo: MyString
+  salary_grade_id: 
+  selection: MyString
+  dutiesRes: MyText
+  qualification: MyString
+  prefSkills: MyText

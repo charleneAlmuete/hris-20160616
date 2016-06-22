@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class EmployeeControllerTest < ActionController::TestCase
+class ServiceControllerTest < ActionController::TestCase
   test "should get new" do
     get :new
     assert_response :success
@@ -20,4 +20,5 @@ class EmployeeControllerTest < ActionController::TestCase
     get :index
     assert_response :success
   end
+
 end

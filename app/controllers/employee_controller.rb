@@ -9,12 +9,16 @@ class EmployeeController < ApplicationController
     @organization= Organization.new
     @training= Training.new
     @medical= Medical.new
+    @child= Children.new
   end
+
+  
 
   def create
   end
 
   def edit
+    @child= Children.new
   end
 
   def update
@@ -24,6 +28,8 @@ class EmployeeController < ApplicationController
   end
 
   def index
-    @grid_personalinfo = initialize_grid(Company)
+    @profile_grid = initialize_grid(Employee, per_page: 20)
   end
+
+  
 end

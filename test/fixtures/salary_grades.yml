@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  grade: 1
+  started: 1
+  ended: 1
+
+two:
+  grade: 1
+  started: 1
+  ended: 1

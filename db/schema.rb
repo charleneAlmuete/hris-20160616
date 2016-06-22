@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160613064219) do
+ActiveRecord::Schema.define(version: 20160621062312) do
 
   create_table "awards", force: true do |t|
     t.integer "employee_id"
@@ -24,11 +24,11 @@ ActiveRecord::Schema.define(version: 20160613064219) do
 
   create_table "branchcoms", force: true do |t|
     t.integer "company_id"
-    t.integer "branch_id"
+    t.integer "branchset_id"
     t.string  "address"
   end
 
-  add_index "branchcoms", ["branch_id"], name: "index_branchcoms_on_branch_id", using: :btree
+  add_index "branchcoms", ["branchset_id"], name: "index_branchcoms_on_branch_id", using: :btree
   add_index "branchcoms", ["company_id"], name: "index_branchcoms_on_company_id", using: :btree
 
   create_table "branchsets", force: true do |t|
@@ -118,6 +118,21 @@ ActiveRecord::Schema.define(version: 20160613064219) do
     t.string "spNo"
   end
 
+  create_table "jobs", force: true do |t|
+    t.string  "jobTitle"
+    t.integer "branchcom_id"
+    t.string  "empStatus"
+    t.string  "reportTo"
+    t.integer "salary_grade_id"
+    t.string  "selection"
+    t.text    "dutiesRes"
+    t.string  "qualification"
+    t.text    "prefSkills"
+  end
+
+  add_index "jobs", ["branchcom_id"], name: "index_jobs_on_branchcom_id", using: :btree
+  add_index "jobs", ["salary_grade_id"], name: "index_jobs_on_salary_grade_id", using: :btree
+
   create_table "licensures", force: true do |t|
     t.integer "employee_id"
     t.string  "name"
@@ -146,6 +161,12 @@ ActiveRecord::Schema.define(version: 20160613064219) do
   end
 
   add_index "organizations", ["employee_id"], name: "index_organizations_on_employee_id", using: :btree
+
+  create_table "salary_grades", force: true do |t|
+    t.integer "grade"
+    t.integer "started"
+    t.integer "ended"
+  end
 
   create_table "skills", force: true do |t|
     t.integer "employee_id"

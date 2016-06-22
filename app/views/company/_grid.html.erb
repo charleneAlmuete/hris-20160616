@@ -1,6 +1,8 @@
 <%= grid(@company_grid, show_filters: :always) do |g|
 
-  g.column name:  'ID', attribute: 'id'
+  g.column name:  'ID', attribute: 'id', filter: false
+
+  g.column name:  'Name', attribute: 'name'
 
   g.column name:  'Code', attribute: 'code'
 

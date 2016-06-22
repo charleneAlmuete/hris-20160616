@@ -13,7 +13,7 @@
 				<%= link_to '<span id="nav-menu" class="fa fa-home dashboard"></span>Dashboard'.html_safe, employee_index_path, id:"nav-font" %>
 			</li>
 			<li class="dropdown">
-				<%= link_to '<span id="nav-menu" class="fa fa-building affiliate"></span>Affiliates<span class="caret"></span>'.html_safe, employee_index_path, id:"nav-font" %>
+				<%= link_to '<span id="nav-menu" class="fa fa-building affiliate"></span>Affiliates<span class="caret"></span>'.html_safe, '#', id:"nav-font" %>
 				<ul class="dropdown-menu">
 					<li><%= link_to "Company", company_index_path %></li>
 					<li><%= link_to "Branch", branchcom_index_path %></li>
@@ -23,7 +23,7 @@
 				<%= link_to '<span id="nav-menu" class="fa fa-users employee"></span>Employee'.html_safe, employee_index_path, id:"nav-font" %>
 			</li>
 			<li>
-				<%= link_to '<span id="nav-menu" class="fa fa-money claim"></span>Claim Status'.html_safe, employee_index_path, id:"nav-font" %>
+				<%= link_to '<span id="nav-menu" class="fa fa-money claim"></span>Service History'.html_safe, service_index_path, id:"nav-font" %>
 			</li>
 			<li>
 				<%= link_to '<span id="nav-menu" class="fa fa-car leave"></span>Leaves'.html_safe, employee_index_path, id:"nav-font" %>
@@ -37,6 +37,9 @@
 			</li>
 			<li>
 				<%= link_to '<span id="nav-menu" class="fa fa-briefcase project"></span>Projects'.html_safe, employee_index_path, id:"nav-font" %>
+			</li>
+			<li>
+				<%= link_to '<span id="nav-menu" class="fa fa-thumbs-o-up job"></span>Jobs'.html_safe, employee_index_path, id:"nav-font" %>
 			</li>
 		</ul>
 	</div>
