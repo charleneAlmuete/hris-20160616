@@ -4,6 +4,18 @@ HRIS::Application.routes.draw do
   resources :company
   get "branchcom/newset"
   resources :branchcom
+  get "employee/new_personal"
+  get "employee/new_education"
+  get "employee/new_basic_contact"
+  get "employee/new_awards"
+  get "employee/new_exam"
+  get "employee/new_work"
+  get "employee/new_skill"
+  get "employee/new_organization"
+  get "employee/new_training"
+  get "employee/new_medical"
+  get "employee/new_emergency_contact"
+  get "employee/service"
   resources :employee
   resources :service
   # The priority is based upon order of creation: first created -> highest priority.

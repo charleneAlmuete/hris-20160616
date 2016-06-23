@@ -17,7 +17,7 @@
   g.column name:  'Citizenship', attribute: 'citizenship', filter: false
 
   g.column do |task| 
-  	link_to 'View', employee_path(task.id), remote: true
+  	link_to 'View', employee_path(task.id)
   end 
 
 end -%>
