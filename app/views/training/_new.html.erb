@@ -1,0 +1,59 @@
+<%= simple_form_for @training, url: new_training_path, html: {class: "form-horizontal"} do |f| %>
+<div class="col-lg-12">
+	<div class="col-lg-5">
+		<div class="form-group">
+			<label class="control-label col-lg-3">Name</label>
+			<div class="col-lg-7">
+				<%= f.text_field 'name', class: "form-control" %>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-lg-3">From</label>
+			<div class="col-lg-7">
+				<%= f.text_field 'started', class: "form-control" %>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-lg-3">To</label>
+			<div class="col-lg-7">
+				<%= f.text_field 'ended', class: "form-control" %>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-lg-3">Remarks</label>
+			<div class="col-lg-7">
+				<%= f.text_field 'remarks', class: "form-control" %>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="form-group">
+			<label class="control-label col-lg-3">Institution</label>
+			<div class="col-lg-7">
+				<%= f.text_field 'institution', class: "form-control" %>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-lg-3">Venue</label>
+			<div class="col-lg-7">
+				<%= f.text_field 'venue', class: "form-control" %>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-lg-3">Speaker</label>
+			<div class="col-lg-7">
+				<%= f.text_field 'speaker', class: "form-control" %>
+			</div>
+		</div>
+	</div>
+</div>
+<br /><br />
+<%= f.submit 'Save', class: 'btn btn-success btn-block' %>
+<% end %>
+

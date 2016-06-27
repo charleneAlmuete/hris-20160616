@@ -6,7 +6,7 @@
 	<div id="fontall" class="row well">
 		<ul class="nav nav-tabs nav-justified">
 			<li class="active"><%= link_to 'P R O F I L E', employee_new_personal_path, remote: 'true' %></li>
-			<li><%= link_to 'S E R V I C E', employee_service_path, remote: 'true' %></li>
+			<li><%= link_to 'S E R V I C E', new_service_path, remote: 'true' %></li>
 		</ul><br />
 
 		<ul class="nav nav-tabs">
@@ -23,14 +23,14 @@
 					</li>
 				</ul>
 			</li>
-			<li><%= link_to '<span class="fa fa-graduation-cap"></span> Education'.html_safe, employee_new_education_path, remote: 'true' %></li>
-			<li><%= link_to '<span class="fa fa-star"></span> Awards and Achievements'.html_safe, employee_new_awards_path, remote: 'true' %></li>
-			<li><%= link_to '<span class="fa fa-credit-card"></span> Licensure and Examination'.html_safe, employee_new_exam_path, remote: 'true' %></li>
-			<li><%= link_to '<span class="fa fa-globe"></span> Work Experience'.html_safe, employee_new_work_path, remote: 'true' %></li>
-			<li><%= link_to '<span class="fa fa-cog"></span> Skills'.html_safe, employee_new_skill_path, remote: 'true' %></li>
-			<li><%= link_to '<span class="fa fa-sitemap"></span> Organizations'.html_safe, employee_new_organization_path, remote: 'true' %></li>
-			<li><%= link_to '<span class="fa fa-television"></span> Trainings and Seminars'.html_safe, employee_new_training_path, remote: 'true' %></li>
-			<li><%= link_to '<span class="fa fa-stethoscope"></span> Medical History'.html_safe, employee_new_medical_path, remote: 'true' %></li>
+			<li><%= link_to '<span class="fa fa-graduation-cap"></span> Education'.html_safe, new_education_path, remote: 'true' %></li>
+			<li><%= link_to '<span class="fa fa-star"></span> Awards and Achievements'.html_safe, new_award_path, remote: 'true' %></li>
+			<li><%= link_to '<span class="fa fa-credit-card"></span> Licensure and Examination'.html_safe, new_exam_path, remote: 'true' %></li>
+			<li><%= link_to '<span class="fa fa-globe"></span> Work Experience'.html_safe, new_work_path, remote: 'true' %></li>
+			<li><%= link_to '<span class="fa fa-cog"></span> Skills'.html_safe, new_skill_path, remote: 'true' %></li>
+			<li><%= link_to '<span class="fa fa-sitemap"></span> Organizations'.html_safe, new_organization_path, remote: 'true' %></li>
+			<li><%= link_to '<span class="fa fa-television"></span> Trainings and Seminars'.html_safe, new_training_path, remote: 'true' %></li>
+			<li><%= link_to '<span class="fa fa-stethoscope"></span> Medical History'.html_safe, new_medical_path, remote: 'true' %></li>
 		</ul><br />
 
 		<div id="render_content">

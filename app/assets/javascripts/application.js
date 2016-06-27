@@ -10,10 +10,20 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require jquery-ui
-//= require turbolinks
+//= require jquery.min
+//= require angular.min
 //= require wice_grid.js
 //= require bootstrap-sprockets
 //= require_tree .
+
+$(document).ready(function(){
+    $('div#hris_nav li').click(
+        function(e)
+        {
+            $('div#hris_nav li').removeClass('active');
+            $(e.currentTarget).addClass('active');
+        }
+    );
+});
+
+
